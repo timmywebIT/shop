@@ -306,21 +306,21 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="./generate/theme.html" class="nav-link">
+                          <a href="{{route('tag.index')}}" class="nav-link">
                             <i class="fa-solid fa-tags nav-icon"></i>
                             <p>Теги</p>
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="./generate/theme.html" class="nav-link">
+                       <a href="{{route('color.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-palette"></i>
                             <p>Цвета</p>
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="./generate/theme.html" class="nav-link">
+                         <a href="{{route('user.index')}}" class="nav-link">
                             <i class="fa-solid fa-users nav-icon"></i>
                             <p>Пользователи</p>
                         </a>

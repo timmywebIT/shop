@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="col-sm-6"><h3 class="mb-3">Категории</h3></div>
+    <div class="col-sm-6"><h3 class="mb-3">Теги</h3></div>
     <div class="container-fluid">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <a href="{{route('category.create')}}" class="btn btn-primary">Добавить</a>
+                    <a href="{{route('tag.create')}}" class="btn btn-primary">Добавить</a>
                     </div>
                 </div>
                 <!-- /.card-header -->
@@ -19,10 +19,10 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($categories as $category)
+                        @foreach($tags as $tag)
                         <tr>
-                            <td>{{ $category->id }}</td>
-                            <td><a href="{{ route('category.show', $category->id) }}">{{ $category->title }}</a></td>
+                            <td>{{ $tag->id }}</td>
+                            <td><a href="{{ route('tag.show', $tag->id) }}">{{ $tag->title }}</a></td>
                         </tr>
                         @endforeach
                         </tbody>

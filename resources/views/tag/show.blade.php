@@ -3,9 +3,9 @@
     <div class="container-fluid">
         <div class="card-header">
             <div class="mb-3">
-                <a href="{{route('category.edit', $category->id)}}" class="btn btn-primary">Редактировать</a>
+                <a href="{{route('tag.edit', $tag->id)}}" class="btn btn-primary">Редактировать</a>
             </div>
-            <form action="{{route('category.delete', $category->id)}}" method="POST">
+            <form action="{{route('tag.delete', $tag->id)}}" method="POST">
                 @csrf
                 @method('DELETE')
                 <input type="submit" class="btn btn-danger" value="Удалить">
@@ -21,8 +21,8 @@
                     </tr>
 
                     <tr>
-                        <td>{{ $category->id }}</td>
-                        <td>{{ $category->title }}</td>
+                        <td>{{ $tag->id }}</td>
+                        <td>{{ $tag->title }}</td>
 
                     </tr>
                 </tbody>

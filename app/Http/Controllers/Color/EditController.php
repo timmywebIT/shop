@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Tag;
+namespace App\Http\Controllers\Color;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
-use Illuminate\Http\Request;
+use App\Models\Color;
+
 
 class EditController extends Controller
 {
-    public function __invoke(Category $category)
+    public function __invoke(Color $color)
     {
-        return view('category.edit', compact('category'));
+        return view('color.edit', compact('color'));
     }
 }

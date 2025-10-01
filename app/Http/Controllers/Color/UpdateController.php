@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Tag;
+namespace App\Http\Controllers\Color;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Category\UpdateRequest;
-use App\Models\Category;
-use Illuminate\Http\Request;
+use App\Models\Color;
+
 
 class UpdateController extends Controller
 {
-    public function __invoke(UpdateRequest $request, Category $category)
+    public function __invoke(UpdateRequest $request, Color $color)
     {
         $data = $request->validated();
-        $category->update($data);
-        return redirect()->route('category.show', compact('category'));
+        $color->update($data);
+        return redirect()->route('color.show', compact('color'));
     }
 }

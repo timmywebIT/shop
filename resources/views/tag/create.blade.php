@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
 @section('content')
-    <h2>Добавить категорию</h2>
+    <h2>Добавить тег</h2>
     <div class="container-fluid">
-        <form action="{{ route('category.store') }}" method="POST">
+        <form action="{{ route('tag.store') }}" method="POST">
             @csrf
             <div class="form-group mb-3">
                 <input type="text" name="title" class="form-control">

@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Tag;
+namespace App\Http\Controllers\Color;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Category\StoreRequest;
-use App\Models\Category;
-use Illuminate\Http\Request;
+use App\Http\Requests\Color\StoreRequest;
+use App\Models\Color;
+
 
 class StoreController extends Controller
 {
     public function __invoke(StoreRequest $request)
     {
         $data = $request->validated();
-        $category = Category::firstOrCreate($data);
-        return redirect()->route('category.index');
+        $color = Color::firstOrCreate($data);
+        return redirect()->route('color.index');
     }
 }
